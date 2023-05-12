@@ -608,18 +608,44 @@ footer .nav-link:hover {
     width: 100%;
     margin: 0;
   }
+  .title-container h5 {
+    font-size: 2rem;
+  }
+
+  .title-container .social-icon span {
+    font-size: 1.5rem;
+  }
+  .title-container .social-icon .icon {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    padding: 25px 10px !important;
+  }
   .navbar-nav {
     align-items: center;
     width: 100%;
+  }
+
+  .navbar-toggler-icon {
+    padding: 40px;
   }
   .nav-item {
     width: 100%;
     text-align: center;
   }
 
+  .headline marquee {
+    padding: 25px;
+  }
+
+  .headline h4 {
+    padding: 20px;
+  }
+
   .carousel-item img {
     width: 100% !important;
-    height: 600px;
+    height: 60vh;
   }
 
   .welcome-container {
@@ -659,7 +685,7 @@ footer .nav-link:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1rem;
+    font-size: 3rem;
   }
 
   .card-icon {
@@ -671,12 +697,30 @@ footer .nav-link:hover {
     margin-top: 0;
   }
 
+  .card h4 {
+    font-size: 2.2rem;
+  }
   .card p {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+  }
+  .welcome-news {
+    flex-direction: column-reverse;
   }
 
+  .welcome-container p {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
   .welcome-message h1 {
     width: 85%;
+  }
+
+  .welcome-container {
+    width: 95%;
+  }
+
+  .news-container {
+    width: 95%;
   }
 
   .welcome-message p {
@@ -696,8 +740,18 @@ footer .nav-link:hover {
     min-height: 30%;
     font-size: 1rem;
   }
+
+  footer .social-icon {
+    font-size: 2.5rem;
+  }
   .footer-item {
     width: 100%;
+    font-size: 1.7rem;
+    margin-bottom: 2%;
+  }
+
+  .footer-item h3 {
+    font-size: 2.2rem;
   }
 
   .footer-item .nav-item {
