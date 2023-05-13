@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  AOS.init();
   const navbar = document.querySelector(".navbar-container");
   if (window.innerWidth > 992) {
     navbar.classList.remove("sticky-top");
