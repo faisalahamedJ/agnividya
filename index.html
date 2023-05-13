@@ -9,6 +9,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://kit.fontawesome.com/549cf28375.js"
       crossorigin="anonymous"
@@ -30,20 +32,24 @@
     <!----------------------------Header-------------------------------------------->
 
     <header class="header">
-      <img src="./assets/logo.png" alt="" />
+      <div class="logo-container">
+        <img src="./assets/logo.png" alt="" />
+      </div>
       <div class="title-container">
         <h1>Agni vidya kendra</h1>
         <h5>Katterikuppam, Puducherry- 605502</h5>
-        <div class="social-icon">
-          <span>
-            <i class="fa-solid fa-phone" style="color: #2c1573"></i>
-            91-9876543210</span
-          >
-          <span>
-            <i class="fa-solid fa-envelope" style="color: #2c1573"></i>
-            agnividyakendra@gmail.com</span
-          >
-          <span class="icon">
+        <div class="contact-details-container">
+          <div class="contact-details">
+            <span>
+              <i class="fa-solid fa-phone" style="color: #2c1573"></i>
+              91-9876543210</span
+            >
+            <span>
+              <i class="fa-solid fa-envelope" style="color: #2c1573"></i>
+              agnividyakendra@gmail.com</span
+            >
+          </div>
+          <div class="social-icon">
             <i
               class="fa-brands fa-facebook"
               style="color: rgb(0, 115, 255)"
@@ -51,7 +57,7 @@
             <i class="fa-brands fa-youtube" style="color: rgb(218, 1, 1)"></i>
             <i class="fa-brands fa-twitter" style="color: rgb(0, 140, 255)"></i>
             <i class="fa-brands fa-linkedin" style="color: rgb(0, 41, 177)"></i>
-          </span>
+          </div>
         </div>
       </div>
     </header>
@@ -152,7 +158,7 @@
     <!--------------------------------------Card---------------------------------->
 
     <div class="cards-container">
-      <div class="card" style="background: #5cb100">
+      <div class="card" data-aos="zoom-in-up" style="background: #5cb100">
         <div class="card-icon" style="background: #5cb100">
           <i class="fa-solid fa-person-chalkboard fa-2xl"></i>
         </div>
@@ -164,7 +170,7 @@
           here to help your child succeed.
         </p>
       </div>
-      <div class="card" style="background-color: #fe5a00">
+      <div class="card" data-aos="zoom-in-up" style="background-color: #fe5a00">
         <div class="card-icon" style="background-color: #fe5a00">
           <i class="fa-solid fa-user-graduate fa-2xl"></i>
         </div>
@@ -174,7 +180,7 @@
           thinking skills, empowering students to achieve their full potential
         </p>
       </div>
-      <div class="card" style="background-color: #4fb0dc">
+      <div class="card" data-aos="zoom-in-up" style="background-color: #4fb0dc">
         <div class="card-icon" style="background-color: #4fb0dc">
           <i class="fa-solid fa-user-doctor fa-2xl"></i>
         </div>
@@ -192,8 +198,7 @@
     <button class="move-to-top">
       <i class="fa-solid fa-circle-up fa-shake"></i>
     </button>
-
-    <div class="welcome-message">
+    <div class="welcome-message" data-aos="fade-up">
       <h1>
         Welcome to <span style="color: #fe5a00"> Agni Vidya Kendra! </span>
       </h1>
@@ -204,54 +209,101 @@
         critical thinking, and inspiring them to become responsible citizens who
         care for their community and the environment. We invite you to explore
         our website and learn more about our values, programs, and achievements.
+        <br />
       </p>
+      <button data-aos="fade-up" class="button">About us</button>
     </div>
 
     <!--------------------------------------Welcome-------------------------------------------->
-    <div class="welcome-news">
-      <div class="welcome-container">
-        <div>
-          <h6>Our Objectives</h6>
-          <p>
-            The primary objective of our school is to empower students to
-            enhance their inherent abilities, develop their talents, and
-            discover their full potential. We strive to instill a love of
-            learning, a spirit of inquiry, keen observation skills, and
-            interpersonal relationships in our students, as well as a sense of
-            responsibility towards the environment.
-          </p>
+    <div style="background-color: #ac9e96">
+      <div class="welcome-news">
+        <div class="welcome-container" data-aos="fade-up">
+          <div>
+            <h6>Our Objectives</h6>
+            <p>
+              The primary objective of our school is to empower students to
+              enhance their inherent abilities, develop their talents, and
+              discover their full potential. We strive to instill a love of
+              learning, a spirit of inquiry, keen observation skills, and
+              interpersonal relationships in our students, as well as a sense of
+              responsibility towards the environment.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <div class="news-container">
-        <h3>News & <span style="color: #fe5a00"> Events</span></h3>
-        <div class="scrolling-container">
-          <div class="news-item">
-            <h6>On this Friday</h6>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-              ipsa praesentium quo rem unde corrupti ratione. Alias libero
-              aperiam vero hic minus nihil possimus, repudiandae et voluptatem,
-              nisi id nam.
-            </p>
-          </div>
-          <div class="news-item">
-            <h6>On this Friday</h6>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-              ipsa praesentium quo rem unde corrupti ratione. Alias libero
-              aperiam vero hic minus nihil possimus, repudiandae et voluptatem,
-              nisi id nam.
-            </p>
-          </div>
-          <div class="news-item">
-            <h6>On this Friday</h6>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-              ipsa praesentium quo rem unde corrupti ratione. Alias libero
-              aperiam vero hic minus nihil possimus, repudiandae et voluptatem,
-              nisi id nam.
-            </p>
+        <div class="news-container" data-aos="fade-up">
+          <h3>News & <span style="color: #fe5a00"> Events</span></h3>
+          <div id="new-event-carousel" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item event-item active">
+                <img
+                  src="./assets/event-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+              <div class="carousel-item event-item">
+                <img
+                  src="/assets/event-2.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+              <div class="carousel-item event-item">
+                <img
+                  src="/assets/event-3.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Read more</a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#new-event-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#new-event-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -260,8 +312,8 @@
     <!-- <hr class="vertical-line" /> -->
 
     <!-----------------------------infinite-image------------------------------------->
-    <div class="facilities">Facilities</div>
-    <div class="permas-container">
+    <div class="facilities" data-aos="fade-up">Facilities</div>
+    <div class="permas-container" data-aos="fade-up">
       <div class="permas">
         <div>
           <h2>Transportation</h2>
@@ -317,14 +369,14 @@
             Vokalia and Consonantia, there live the blind texts.
           </p>
 
-          <button>Enroll Now</button>
+          <button class="button">Enroll Now</button>
         </div>
       </div>
     </div>
 
     <!----------------------------------Footer-------------------------------------->
 
-    <footer class="footer-container">
+    <footer class="footer-container" data-aos="fade-up">
       <div class="footer-item object-fit-contain">
         <img src="./assets/logo.png" alt="" />
         <div class="social-icon">
@@ -435,7 +487,7 @@
         </div>
         <div class="address">
           <i class="fa-solid fa-envelope" style="color: #eaa679"></i>
-          @gmail.com
+          agnividyakendra@gmail.com
         </div>
       </div>
     </footer>
