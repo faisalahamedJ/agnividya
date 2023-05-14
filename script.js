@@ -25,4 +25,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   });
+  // Get the loading overlay element
+  const loadingOverlay = document.getElementById("loading-overlay");
+  const wholeContainer = document.getElementById("whole-container");
+  wholeContainer.style.display = "none";
+
+  window.addEventListener("load", () => {
+    loadingOverlay.style.display = "none";
+    wholeContainer.style.display = "block";
+
+    // Show the page content once the loading overlay is hidden
+    // document.getElementById("page-content").style.display = "block";
+  });
 });

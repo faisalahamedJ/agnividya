@@ -29,470 +29,522 @@
     <script src="script.js"></script>
   </head>
   <body class="container-fluid body-container">
+    <div class="loader">
+      <div class="spinner-border" id="loading-overlay" role="status"></div>
+      <span class="visually-hidden">Loading...</span>
+    </div>
     <!----------------------------Header-------------------------------------------->
-
-    <header class="header">
-      <div class="logo-container">
-        <img src="./assets/logo.png" alt="" />
-      </div>
-      <div class="title-container">
-        <h1>Agni vidya kendra</h1>
-        <h5>Katterikuppam, Puducherry- 605502</h5>
-        <div class="contact-details-container">
-          <div class="contact-details">
-            <span>
-              <i class="fa-solid fa-phone" style="color: #2c1573"></i>
-              91-9876543210</span
-            >
-            <span>
-              <i class="fa-solid fa-envelope" style="color: #2c1573"></i>
-              agnividyakendra@gmail.com</span
-            >
-          </div>
-          <div class="social-icon">
-            <i
-              class="fa-brands fa-facebook"
-              style="color: rgb(0, 115, 255)"
-            ></i>
-            <i class="fa-brands fa-youtube" style="color: rgb(218, 1, 1)"></i>
-            <i class="fa-brands fa-twitter" style="color: rgb(0, 140, 255)"></i>
-            <i class="fa-brands fa-linkedin" style="color: rgb(0, 41, 177)"></i>
-          </div>
+    <div id="whole-container">
+      <header class="header">
+        <div class="logo-container">
+          <img src="./assets/logo.png" alt="" />
         </div>
-      </div>
-    </header>
-
-    <!--------------------------------------------------Navbar----------------------------------------------------->
-
-    <nav class="navbar navbar-expand-lg sticky-top navbar-container">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Gallery</a
+        <div class="title-container">
+          <h1>Agni vidya kendra</h1>
+          <h5>Katterikuppam, Puducherry- 605502</h5>
+          <div class="contact-details-container">
+            <div class="contact-details">
+              <span>
+                <i class="fa-solid fa-phone" style="color: #2c1573"></i>
+                91-9876543210</span
               >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Photos</a></li>
-                <li><a class="dropdown-item" href="#">Videos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Admission</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-------------------------------------Headline---------------------------------------------->
-
-    <div class="headline">
-      <h4>Latest NEWS</h4>
-      <marquee>Latest News & Updates will be updated here!!!</marquee>
-    </div>
-
-    <!-------------------------------------------Carousel----------------------------------------->
-
-    <div
-      id="carouselExampleAutoplaying"
-      class="carousel slide"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/image-1.jpg" class="d-block" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/image-2.jpg" class="d-block" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/image-3.jpg" class="d-block" alt="..." />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-    <!--------------------------------------Card---------------------------------->
-
-    <div class="cards-container">
-      <div class="card" data-aos="zoom-in-up" style="background: #5cb100">
-        <div class="card-icon" style="background: #5cb100">
-          <i class="fa-solid fa-person-chalkboard fa-2xl"></i>
-        </div>
-        <h4>Best Tutors</h4>
-        <p>
-          Our team of experienced and dedicated tutors is committed to providing
-          your child with the best education possible. With a focus on
-          individualized attention and a passion for teaching, our tutors are
-          here to help your child succeed.
-        </p>
-      </div>
-      <div class="card" data-aos="zoom-in-up" style="background-color: #fe5a00">
-        <div class="card-icon" style="background-color: #fe5a00">
-          <i class="fa-solid fa-user-graduate fa-2xl"></i>
-        </div>
-        <h4>Best Curriculum</h4>
-        <p>
-          Our curriculum is carefully crafted to foster creativity and critical
-          thinking skills, empowering students to achieve their full potential
-        </p>
-      </div>
-      <div class="card" data-aos="zoom-in-up" style="background-color: #4fb0dc">
-        <div class="card-icon" style="background-color: #4fb0dc">
-          <i class="fa-solid fa-user-doctor fa-2xl"></i>
-        </div>
-
-        <h4>Creative thinking</h4>
-        <p>
-          Encouraging creative thinking helps students to approach problems in
-          new and innovative ways.
-        </p>
-      </div>
-    </div>
-
-    <!-------------------------------------------------move to top--------------------------------------------->
-
-    <button class="move-to-top">
-      <i class="fa-solid fa-circle-up fa-shake"></i>
-    </button>
-    <div class="welcome-message" data-aos="fade-up">
-      <h1>
-        Welcome to <span style="color: #fe5a00"> Agni Vidya Kendra! </span>
-      </h1>
-      <p>
-        We are committed to providing a holistic learning experience that helps
-        our students grow not just academically, but also as individuals. Our
-        focus is on nurturing their innate talents, encouraging curiosity and
-        critical thinking, and inspiring them to become responsible citizens who
-        care for their community and the environment. We invite you to explore
-        our website and learn more about our values, programs, and achievements.
-        <br />
-      </p>
-      <button data-aos="fade-up" class="button">About us</button>
-    </div>
-
-    <!--------------------------------------Welcome-------------------------------------------->
-    <div style="background-color: #ac9e96">
-      <div class="welcome-news">
-        <div class="welcome-container" data-aos="fade-up">
-          <div>
-            <h6>Our Objectives</h6>
-            <p>
-              The primary objective of our school is to empower students to
-              enhance their inherent abilities, develop their talents, and
-              discover their full potential. We strive to instill a love of
-              learning, a spirit of inquiry, keen observation skills, and
-              interpersonal relationships in our students, as well as a sense of
-              responsibility towards the environment.
-            </p>
-          </div>
-        </div>
-        <div class="news-container" data-aos="fade-up">
-          <h3>News & <span style="color: #fe5a00"> Events</span></h3>
-          <div id="new-event-carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item event-item active">
-                <img
-                  src="./assets/event-1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-              <div class="carousel-item event-item">
-                <img
-                  src="/assets/event-2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-              <div class="carousel-item event-item">
-                <img
-                  src="/assets/event-3.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <a href="#" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
+              <span>
+                <i class="fa-solid fa-envelope" style="color: #2c1573"></i>
+                agnividyakendra@gmail.com</span
+              >
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#new-event-carousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#new-event-carousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="social-icon">
+              <i
+                class="fa-brands fa-facebook"
+                style="color: rgb(0, 115, 255)"
+              ></i>
+              <i class="fa-brands fa-youtube" style="color: rgb(218, 1, 1)"></i>
+              <i
+                class="fa-brands fa-twitter"
+                style="color: rgb(0, 140, 255)"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin"
+                style="color: rgb(0, 41, 177)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--------------------------------------------------Navbar----------------------------------------------------->
+
+      <nav class="navbar navbar-expand-lg sticky-top navbar-container">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Gallery</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Photos</a></li>
+                  <li><a class="dropdown-item" href="#">Videos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Admission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-------------------------------------Headline---------------------------------------------->
+
+      <div class="headline">
+        <h4>Latest NEWS</h4>
+        <marquee>Latest News & Updates will be updated here!!!</marquee>
+      </div>
+
+      <!-------------------------------------------Carousel----------------------------------------->
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/image-1.jpg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/image-2.jpg" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/image-3.jpg" class="d-block" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--------------------------------------Card---------------------------------->
+
+      <div class="cards-container">
+        <div class="card" data-aos="zoom-in-up" style="background: #5cb100">
+          <div class="card-icon" style="background: #5cb100">
+            <i class="fa-solid fa-person-chalkboard fa-2xl"></i>
+          </div>
+          <h4>Best Tutors</h4>
+          <p>
+            Our team of experienced and dedicated tutors is committed to
+            providing your child with the best education possible. With a focus
+            on individualized attention and a passion for teaching, our tutors
+            are here to help your child succeed.
+          </p>
+        </div>
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          style="background-color: #fe5a00"
+        >
+          <div class="card-icon" style="background-color: #fe5a00">
+            <i class="fa-solid fa-user-graduate fa-2xl"></i>
+          </div>
+          <h4>Best Curriculum</h4>
+          <p>
+            Our curriculum is carefully crafted to foster creativity and
+            critical thinking skills, empowering students to achieve their full
+            potential
+          </p>
+        </div>
+        <div
+          class="card"
+          data-aos="zoom-in-up"
+          style="background-color: #4fb0dc"
+        >
+          <div class="card-icon" style="background-color: #4fb0dc">
+            <i class="fa-solid fa-user-doctor fa-2xl"></i>
+          </div>
+
+          <h4>Creative thinking</h4>
+          <p>
+            Encouraging creative thinking helps students to approach problems in
+            new and innovative ways.
+          </p>
+        </div>
+      </div>
+
+      <!-------------------------------------------------move to top--------------------------------------------->
+
+      <button class="move-to-top">
+        <i class="fa-solid fa-circle-up fa-shake"></i>
+      </button>
+
+      <!--------------------video -------------------->
+      <div class="wel-cont">
+        <div class="wel-cont-child">
+          <div class="welcome-message" data-aos="fade-up">
+            <h1>
+              Welcome to
+              <span style="color: #fe5a00"> Agni Vidya Kendra! </span>
+            </h1>
+            <p>
+              We are committed to providing a holistic learning experience that
+              helps our students grow not just academically, but also as
+              individuals. Our focus is on nurturing their innate talents,
+              encouraging curiosity and critical thinking, and inspiring them to
+              become responsible citizens who care for their community and the
+              environment. We invite you to explore our website and learn more
+              about our values, programs, and achievements.
+              <br />
+            </p>
+            <button data-aos="fade-up" class="button">About us</button>
+          </div>
+          <div class="youtube-container" data-aos="fade-up">
+            <iframe
+              width="70%"
+              height="70%"
+              src="https://www.youtube.com/embed/1E6U0WqpYsA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <button data-aos="fade-up" class="button">More videos</button>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- <hr class="vertical-line" /> -->
-
-    <!-----------------------------infinite-image------------------------------------->
-    <div class="facilities" data-aos="fade-up">Facilities</div>
-    <div class="permas-container" data-aos="fade-up">
-      <div class="permas">
-        <div>
-          <h2>Transportation</h2>
-          <img src="./assets/ci-1.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Library</h2>
-          <img src="./assets/ci-2.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Research Laboratory</h2>
-          <img src="./assets/ci-3.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Computer Laboratory</h2>
-          <img src="./assets/ci-4.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Sports & Games</h2>
-          <img src="./assets/ci-5.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Transportation</h2>
-          <img src="./assets/ci-1.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Library</h2>
-          <img src="./assets/ci-2.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Research Laboratory</h2>
-          <img src="./assets/ci-3.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Computer Laboratory</h2>
-          <img src="./assets/ci-4.jpg" alt="" />
-        </div>
-        <div>
-          <h2>Sports & Games</h2>
-          <img src="./assets/ci-5.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <!---------------------------------fixed bg-------------------------------------->
-
-    <div class="img-fixed-container">
-      <div class="enroll-container">
-        <div class="enroll-item">
-          <h1>Education for Tomorrow's Leaders</h1>
-          <p>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
-          </p>
-
-          <button class="button">Enroll Now</button>
-        </div>
-      </div>
-    </div>
-
-    <!----------------------------------Footer-------------------------------------->
-
-    <footer class="footer-container" data-aos="fade-up">
-      <div class="footer-item object-fit-contain">
-        <img src="./assets/logo.png" alt="" />
-        <div class="social-icon">
-          <i class="fa-brands fa-facebook" style="color: rgb(0, 115, 255)"></i>
-          <i class="fa-brands fa-youtube" style="color: rgb(218, 1, 1)"></i>
-          <i class="fa-brands fa-twitter" style="color: rgb(0, 140, 255)"></i>
-          <i class="fa-brands fa-linkedin" style="color: rgb(0, 41, 177)"></i>
-        </div>
-      </div>
-      <div class="footer-item">
-        <h3>Contact US</h3>
-        <p>
-          Agni Vidya Kendra believes that values are the foundation of a
-          purposeful life, shaping our character and guiding our behavior
-          towards positive actions.
-        </p>
-        <i
-          >"Education is not the filling of a pail, but the lighting of a fire."
-          - W.B. Yeats</i
-        >
-      </div>
-      <div class="footer-item">
-        <h3>Quick Link</h3>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
+      <!--------------------------------------Welcome-------------------------------------------->
+      <div style="background-color: #ac9e96">
+        <div class="welcome-news">
+          <div class="welcome-container" data-aos="fade-up">
+            <div>
+              <h6>Our Objectives</h6>
+              <p>
+                The primary objective of our school is to empower students to
+                enhance their inherent abilities, develop their talents, and
+                discover their full potential. We strive to instill a love of
+                learning, a spirit of inquiry, keen observation skills, and
+                interpersonal relationships in our students, as well as a sense
+                of responsibility towards the environment.
+              </p>
+            </div>
+          </div>
+          <div class="news-container" data-aos="fade-up">
+            <h3>News & <span style="color: #fe5a00"> Events</span></h3>
+            <div id="new-event-carousel" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item event-item active">
+                  <img
+                    src="./assets/event-1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="carousel-item event-item">
+                  <img
+                    src="/assets/event-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+                <div class="carousel-item event-item">
+                  <img
+                    src="/assets/event-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#new-event-carousel"
+                data-bs-slide="prev"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              About us</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#new-event-carousel"
+                data-bs-slide="next"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              Admission</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              Photos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-              Videos</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footer-item">
-        <h3>Address</h3>
-        <div class="address">
-          <i class="fa-solid fa-map-location-dot" style="color: #eaa679"></i>
-          AGNI VIDYA KENDRA School, Katterikuppam, Puducherry- 605502 <br />
-        </div>
-        <div class="address">
-          <i class="fa-solid fa-phone" style="color: #eaa679"></i>
-          +91-9876543210
-        </div>
-        <div class="address">
-          <i class="fa-solid fa-envelope" style="color: #eaa679"></i>
-          agnividyakendra@gmail.com
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-    <div class="copy-content">
-      Copyright &copy; Contact US Agni Vidya Kendra School. All Rights Reserved
+
+      <!-- <hr class="vertical-line" /> -->
+
+      <!-----------------------------infinite-image------------------------------------->
+      <div class="facilities" data-aos="fade-up">Facilities</div>
+      <div class="permas-container" data-aos="fade-up">
+        <div class="permas">
+          <div>
+            <h2>Transportation</h2>
+            <img src="./assets/ci-1.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Library</h2>
+            <img src="./assets/ci-2.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Research Laboratory</h2>
+            <img src="./assets/ci-3.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Computer Laboratory</h2>
+            <img src="./assets/ci-4.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Sports & Games</h2>
+            <img src="./assets/ci-5.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Transportation</h2>
+            <img src="./assets/ci-1.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Library</h2>
+            <img src="./assets/ci-2.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Research Laboratory</h2>
+            <img src="./assets/ci-3.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Computer Laboratory</h2>
+            <img src="./assets/ci-4.jpg" alt="" />
+          </div>
+          <div>
+            <h2>Sports & Games</h2>
+            <img src="./assets/ci-5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------fixed bg-------------------------------------->
+
+      <div class="img-fixed-container">
+        <div class="enroll-container">
+          <div class="enroll-item" data-aos="fade-up">
+            <h1>Education for Tomorrow's Leaders</h1>
+            <p data-aos="fade-up">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts.
+            </p>
+
+            <button class="button" data-aos="fade-up">Enroll Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------Footer-------------------------------------->
+      <div class="footer-back">
+        <footer class="footer-container" data-aos="fade-up">
+          <div class="footer-item object-fit-contain">
+            <img src="./assets/logo.png" alt="" />
+            <div class="social-icon">
+              <i
+                class="fa-brands fa-facebook"
+                style="color: rgb(0, 115, 255)"
+              ></i>
+              <i class="fa-brands fa-youtube" style="color: rgb(218, 1, 1)"></i>
+              <i
+                class="fa-brands fa-twitter"
+                style="color: rgb(0, 140, 255)"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin"
+                style="color: rgb(0, 41, 177)"
+              ></i>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h3>Contact US</h3>
+            <p>
+              Agni Vidya Kendra believes that values are the foundation of a
+              purposeful life, shaping our character and guiding our behavior
+              towards positive actions.
+            </p>
+            <i
+              >"Education is not the filling of a pail, but the lighting of a
+              fire." - W.B. Yeats</i
+            >
+          </div>
+          <div class="footer-item">
+            <h3>Quick Link</h3>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                  About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                  Admission</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                  Photos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                  Videos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h3>Address</h3>
+            <div class="address">
+              <i
+                class="fa-solid fa-map-location-dot"
+                style="color: #eaa679"
+              ></i>
+              AGNI VIDYA KENDRA School, Katterikuppam, Puducherry- 605502 <br />
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-phone" style="color: #eaa679"></i>
+              +91-9876543210
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-envelope" style="color: #eaa679"></i>
+              agnividyakendra@gmail.com
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="copy-content">
+        Copyright &copy; Contact US Agni Vidya Kendra School. All Rights
+        Reserved
+      </div>
     </div>
   </body>
 </html>
