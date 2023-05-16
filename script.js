@@ -33,21 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", () => {
     loadingOverlay.style.display = "none";
     wholeContainer.style.display = "block";
-
-    // Show the page content once the loading overlay is hidden
-    // document.getElementById("page-content").style.display = "block";
   });
-
-  // document.querySelectorAll("a.nav-link.active").forEach((li) => {
-  //   li.classList.remove("active");
-  //   li.attributes.removeNamedItem("aria-current");
-  // });
-
-  // // find the link to the current page and make it active
-  // document
-  //   .querySelectorAll(`a[href="${location.pathname}"].nav-link`)
-  //   .forEach((a) => {
-  //     a.classList.add("active");
-  //     a.setAttribute("aria-current", "page");
-  //   });
 });
