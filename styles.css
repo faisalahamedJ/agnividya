@@ -173,6 +173,7 @@ header {
 
 .navbar .active {
   color: #1d0c51 !important;
+  background: transparent !important;
   border-bottom: 5px solid #1d0c51 !important;
 }
 
@@ -652,7 +653,7 @@ footer {
     rgba(0, 0, 0, 0.947) 0%,
     rgba(88, 77, 118, 0.7) 100%
   );
-  margin-top: 5%;
+  /* margin-top: 5%; */
   display: flex;
   color: #fff;
   justify-content: space-evenly;
@@ -722,7 +723,7 @@ footer .nav-link:hover {
 .about-title {
   width: 100%;
   height: 60vh;
-  background-image: url("assets/children-g045f8f485_1920.png");
+  background-image: url("assets/pencil-tip-in-water.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -736,7 +737,7 @@ footer .nav-link:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(2px);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -745,19 +746,25 @@ footer .nav-link:hover {
   padding: 5%;
   font-weight: 800;
   text-transform: capitalize;
-  font-size: 3.5rem;
-  letter-spacing: 0.5rem;
-  color: #fe5a00;
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  color: #ebbb88;
+}
+.pic-content-1 {
+  background-color: rgb(245, 198, 179);
 }
 
-.pic-content-1 {
+.pic-content-1 .content {
   width: 90%;
   margin: auto;
   display: flex;
   gap: 5%;
 }
-
 .pic-content-2 {
+  background-color: #ffe3d3;
+}
+
+.pic-content-2 .content {
   width: 90%;
   margin: auto;
   display: flex;
@@ -803,6 +810,65 @@ footer .nav-link:hover {
 .form-container div {
   width: 50%;
   margin: auto;
+}
+
+/*-------------------------------photos----------------------------------*/
+
+.gallery-title {
+  width: 100%;
+  height: 60vh;
+  background-image: url("assets/grp.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-position-y: -10%;
+  background-attachment: fixed;
+}
+.gallery-title div {
+  width: 100%;
+  height: 100%;
+  background: #00000084;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-title h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  color: #eaa679;
+}
+
+.photo-section h3 {
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 5px solid #eaa679;
+}
+
+.photo-flex {
+  width: 80%;
+  margin: auto;
+  gap: 2rem;
+}
+.photo-flex img {
+  width: calc(100vw / 4);
+  height: calc(100vw / 4);
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.photo-flex img:hover {
+  transform: scale(1.1);
+}
+
+.pagination-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 @media (max-width: 991px) {
@@ -1064,16 +1130,16 @@ footer .nav-link:hover {
     background-position-y: 70%;
   }
 
-  .pic-content-1 {
+  .pic-content-1 .content {
     flex-direction: column-reverse;
     text-align: justify;
   }
 
-  .pic-content-2 {
+  .pic-content-2 .content {
     flex-direction: column;
   }
 
-  .pic-content-3 {
+  .pic-content-3 .content {
     flex-direction: column;
   }
   .about-img {
@@ -1082,8 +1148,33 @@ footer .nav-link:hover {
 
   .about-content {
     width: 100%;
+    text-align: justify;
+  }
+  .about-content h3 {
+    text-align: center;
+  }
+  .about-content p {
+    text-indent: 3rem;
   }
   .about-title div h1 {
     font-size: 2rem;
+  }
+
+  /*------------------------------photos-------------------------------*/
+
+  .gallery-title h1 {
+    font-size: 3rem;
+  }
+  .photo-section h3 {
+    width: 85%;
+    margin: 1rem auto;
+  }
+  .photo-flex {
+    gap: 1rem;
+    width: 80%;
+  }
+  .photo-flex img {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
   }
 }
