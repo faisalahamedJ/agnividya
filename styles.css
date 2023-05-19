@@ -802,13 +802,42 @@ footer .nav-link:hover {
   object-fit: cover;
 }
 
-.form-container {
-  width: 100%;
-  display: flex;
-  margin-top: 5%;
+.add-bg {
+  background-image: url("assets/children.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 100%;
+  background-attachment: fixed;
 }
-.form-container div {
-  width: 50%;
+.dup-clas {
+  background-color: #ffffffde;
+}
+
+.form-container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  background: #fff;
+}
+.form-container .contact-form {
+  width: 40%;
+  margin: 3% 0 3% auto;
+  padding: 2% 3%;
+}
+
+.form-container h4 {
+  padding-bottom: 2%;
+  color: #2c1573;
+  border-bottom: 5px solid #eaa679;
+}
+
+.contact-form form {
+  padding-top: 2%;
+}
+
+.map-container {
+  width: 35%;
   margin: auto;
 }
 
@@ -869,6 +898,15 @@ footer .nav-link:hover {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+
+.page-link {
+  color: #eaa679 !important;
+}
+
+.photo-flex iframe {
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
 }
 
 @media (max-width: 991px) {
@@ -1164,6 +1202,7 @@ footer .nav-link:hover {
 
   .gallery-title h1 {
     font-size: 3rem;
+    letter-spacing: 0.5rem;
   }
   .photo-section h3 {
     width: 85%;
@@ -1176,5 +1215,24 @@ footer .nav-link:hover {
   .photo-flex img {
     width: calc(100vw / 3);
     height: calc(100vw / 3);
+  }
+
+  /*------------------------------contact us-------------------*/
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .form-container .contact-form {
+    width: 90%;
+    margin: 3% auto;
+  }
+  .map-container {
+    width: 90%;
+    height: 50vh;
+    margin-bottom: 3%;
+  }
+  .map-container iframe {
+    height: 100%;
   }
 }
