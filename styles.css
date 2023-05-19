@@ -812,32 +812,39 @@ footer .nav-link:hover {
 }
 .dup-clas {
   background-color: #ffffffde;
+  padding: 3%;
 }
 
 .form-container {
   width: 80%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
-  background: #fff;
+  background: #ffffffe1;
+  box-shadow: 0 5px 10px #000000a1;
 }
 .form-container .contact-form {
-  width: 40%;
-  margin: 3% 0 3% auto;
+  width: 100%;
   padding: 2% 3%;
+  display: flex;
+  gap: 2%;
 }
 
 .form-container h4 {
-  padding-bottom: 2%;
+  margin-top: 3%;
+  padding: 0 5% 1%;
   color: #2c1573;
   border-bottom: 5px solid #eaa679;
 }
 
 .contact-form form {
+  width: 50%;
   padding-top: 2%;
 }
 
 .map-container {
-  width: 35%;
+  width: 50%;
   margin: auto;
 }
 
@@ -1220,12 +1227,18 @@ footer .nav-link:hover {
   /*------------------------------contact us-------------------*/
 
   .form-container {
-    flex-direction: column;
   }
 
   .form-container .contact-form {
     width: 90%;
+    flex-direction: column;
     margin: 3% auto;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .map-container {
     width: 90%;
