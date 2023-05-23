@@ -182,6 +182,214 @@
         </div>
       </div>
 
+      <!--------------------------------body----------------------------------->
+
+      <div class="add-bg">
+        <div class="dup-clas">
+          <div class="form-container">
+            <h4 style="text-transform: uppercase">Application Form</h4>
+            <span
+              ><h5 style="color: red">
+                (Note : All fields are Mandatory)
+              </h5></span
+            >
+            <div class="application-form">
+              <form>
+                <div class="main-form">
+                  <div class="main-form-input">
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="name">Name</label>
+                      <input type="text" id="name" class="form-control" />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="age">Age</label>
+                      <input type="text" id="age" class="form-control" />
+                    </div>
+
+                    <div
+                      class="d-md-flex justify-content-start align-items-center mb-4 py-2"
+                    >
+                      <h6 class="mb-0 me-4">Gender:</h6>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="femaleGender"
+                          value="option1"
+                        />
+                        <label class="form-check-label" for="femaleGender"
+                          >Female</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="maleGender"
+                          value="option2"
+                        />
+                        <label class="form-check-label" for="maleGender"
+                          >Male</label
+                        >
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="inlineRadioOptions"
+                          id="otherGender"
+                          value="option3"
+                        />
+                        <label class="form-check-label" for="otherGender"
+                          >Other</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label>Date of Birth </label>
+                      <input type="date" id="dob" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-input">
+                    <div class="preview">
+                      <img id="file-ip-1-preview" />
+                    </div>
+
+                    <label for="file-ip-1">Upload Image</label>
+                    <input
+                      type="file"
+                      id="file-ip-1"
+                      accept="image/*"
+                      onchange="showPreview(event);"
+                    />
+                  </div>
+                </div>
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="name">Nationality</label>
+                  <input type="text" id="name" class="form-control" />
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="name">Caste</label>
+                  <input type="text" id="name" class="form-control" />
+                </div>
+
+                <div class="form-outline mb-4" style="overflow-x: auto">
+                  <table>
+                    <tr>
+                      <th>Information</th>
+                      <th>Father</th>
+                      <th>Mother</th>
+                    </tr>
+                    <tr>
+                      <td>Name</td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Date of Birth</td>
+                      <td>
+                        <input type="date" id="name" class="form-control" />
+                      </td>
+                      <td>
+                        <input type="date" id="name" class="form-control" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Occupation</td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Annual Income</td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Mobile No</td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                      <td>
+                        <input type="text" id="name" class="form-control" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address</td>
+                      <td>
+                        <textarea
+                          type="text"
+                          id="name"
+                          class="form-control"
+                        ></textarea>
+                      </td>
+                      <td>
+                        <textarea
+                          type="text"
+                          id="name"
+                          class="form-control"
+                        ></textarea>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <button type="submit" class="button">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="keep-in-touch-container">
+          <div class="keep-in-touch">
+            <h2>Keep in touch</h2>
+            <p>
+              Nullam dictum felis eu pede mollis pretium leo eget bibendum
+              sodales augue velit cursus. tellus eget condimentum rhoncus sem
+              quam semper libero.
+            </p>
+            <div class="keep-in-touch-contact">
+              <div class="item">
+                <i class="fa-solid fa-phone" style="color: #eaa679"></i>
+                <p>+91-9876543210</p>
+              </div>
+              <div class="item">
+                <i
+                  class="fa-solid fa-location-crosshairs"
+                  style="color: #eaa679"
+                ></i>
+                <p>
+                  AGNI VIDYA KENDRA School, Katterikuppam, Puducherry- 605502
+                </p>
+              </div>
+              <div class="item">
+                <i class="fa-solid fa-envelope" style="color: #eaa679"></i>
+                agnividyakendra@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!----------------------------------Footer-------------------------------------->
       <div class="footer-back">
         <footer class="footer-container" data-aos="fade-up">
