@@ -679,12 +679,11 @@ footer img {
   font-weight: 700;
 }
 footer .nav-link svg {
-  margin-top: -5px;
+  margin: auto 5px auto 0;
 }
 footer .nav-link {
   color: #fff !important;
   display: flex;
-  gap: 2%;
 }
 footer .nav-link:hover {
   color: #eaa679 !important;
@@ -709,6 +708,10 @@ footer .nav-link:hover {
   display: flex;
   text-align: left;
   gap: 3%;
+}
+
+.address i {
+  margin: auto 0;
 }
 
 .copy-content {
@@ -1246,6 +1249,10 @@ table {
     margin: 0;
     padding: 0;
   }
+
+  .footer-container {
+    padding: 5px 10px;
+  }
   footer img {
     width: 50%;
     height: 20vh;
@@ -1270,6 +1277,14 @@ table {
   .footer-item .nav-link {
     display: flex;
     align-items: center;
+    gap: 0;
+  }
+  footer .nav-link svg {
+    margin: auto 5px auto 0;
+  }
+
+  footer .address i {
+    margin: auto 0;
   }
 
   /* -----------------About us ---------------------*/
